@@ -1,0 +1,18 @@
+2025-06-24T17:13:00.087131+0700 INFO Запуск программы
+2025-06-24T17:13:00.099708+0700 INFO Начинается новый цикл сбора данных
+2025-06-24T17:13:00.099708+0700 INFO Запрашиваем данные по активным коллекциям...
+2025-06-24T17:13:00.479859+0700 ERROR Ошибка при получении данных: 401 Client Error: Unauthorized for url: https://portals-market.com/api/collections?limit=100&sort_by=day_volume+desc
+2025-06-24T17:13:00.480859+0700 DEBUG Получено 0 коллекций с портала
+2025-06-24T17:13:00.485387+0700 INFO Данные с портала сохранены
+2025-06-24T17:13:00.485387+0700 ERROR Неожиданная ошибка в основном цикле: AuthHandler.__init__() missing 1 required positional argument: 'data'
+Traceback (most recent call last):
+
+  File "C:\Users\florz\OneDrive\Рабочий стол\dict\tg-gift\main.py", line 152, in <module>
+    main()
+    └ <function main at 0x000001B64BEF65C0>
+
+> File "C:\Users\florz\OneDrive\Рабочий стол\dict\tg-gift\main.py", line 63, in main
+    auth = AuthHandler().auth_data
+           └ <class 'src.mrkt.handler.auth.AuthHandler'>
+
+TypeError: AuthHandler.__init__() missing 1 required positional argument: 'data'
